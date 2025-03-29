@@ -1,53 +1,40 @@
-# DigiLens Inc. Sample Project
+# DigiLens Inc. Spaces Sample Project 
 
 ![Lint](https://github.com/digilens-ar/Unity-sample-app/actions/workflows/linter.yml/badge.svg)
 
-To get started, navigate to our developer site: [Getting Started with Unity for ARGO](https://developer.digilens.com/hc/en-us/articles/20469922225435--Getting-Started-with-Unity-for-ARGO)
+To get started, navigate to our developer site:  [Developing with Qualcomm Snapdragon Spaces](https://developer.digilens.com/hc/en-us/articles/34616739140251-Developing-with-Qualcomm-Snapdragon-Spaces)
 
-The web page provides a detailed description of the steps required to build Unity applications for ARGO devices.
+The web page provides a detailed description of the steps required to incorporate Spaces to your project and build Unity applications for ARGO devices.
 
 ## Overview
 
-This Unity Sample app provides two sample scenes that showcase the different methods of UI interaction availible.
+This Unity Sample app demonstrates how to set up your project for AR development with Spaces. Before proceeding, you will need to download the [Snapdragon Spaces Unity SDK](https://spaces.qualcomm.com/developer/ar-sdk/#downloads)
 
 ## Requirements
 
-Unity 2021.3+
+- DigiOS Software Build B1.0001.2098 and above
 
-Basic knowledge of Unity and C#
+- Unity Editor version 2021.3.33f1
 
-## Sample Scene 1: Scroll Wheel Interaction
+- Snapdragon Spaces Unity SDK v24 
 
-This scene showcases a dynamic cube that responds to scroll wheel input by changing color and rotation. To explore the functionality, we have included a script called CubeController.
-To gain insight into this feature, open the CubeController script located on the cube.
-By examining this script, you will observe the implementation of the scroll wheel and how it is specifically mapped to Unity's Input System.
+- Basic knowledge of Unity and C#
 
-**Note:** ARGO currently does not support the new input system.
 
-## Sample Scene 2: Voice UI
+## Instructions for Building
+1. Download [Unity Hub](https://unity.com/download)
+2. Install editor version [2021.3.33f1](https://unity.com/releases/editor/archive) with Android Build support
+3. Download the [Snapdragon Spaces Unity SDK](https://spaces.qualcomm.com/developer/ar-sdk/#downloads)
+4. Open the project and import the Spaces SDK and the Spaces Hand Tracking package (located in the same folder)
+5. Import sample assets for both packages
+6. Within the XR Management Settings, enable Snapdragon Spaces, along with the Base Runtime feature and the Hand Tracking feature
+7. Select Android as the build platform
+8. Build and run the DigiOS Spaces Sample scene
 
-This scene provides a demonstration of how to utilize the Voice UI feature.
-
-The scene consists of the following elements:
-- A VoiceUIHandler prefab which contains a VoiceUITest script
-- A sphere object with a script called SphereController.
-
-The VoiceUITest script is responsible for implementing the Voice UI feature. The script registers any specified voice commands and triggers actions based on voice callback events.
-
-The SphereController script contains multiple functions which are invoked from the VoiceUITest script. Each function corresponds to a specific voice command.
-
-To modify the VoiceUITest script, simply change the reference script from SphereController to your own script.
-Then, within the VoiceUITest script, modify the voice commands, the listeners, and implement your own Callback() functions.
-For more detailed instructions, visit the following site: [Add Voice Commands to Unity Apps](https://developer.digilens.com/hc/en-us/articles/24214954568091-Add-Voice-Commands-to-Unity-Apps)
-
-**Note:** this is just a demonstration of a scene showcasing how to implement a voice UI feature in your Unity project. The actual implementation may vary based your project requirements.
+For more detailed instructions visit the [Developing with Qualcomm Snapdragon Spaces](https://developer.digilens.com/hc/en-us/articles/34616739140251-Developing-with-Qualcomm-Snapdragon-Spaces) page.
 
 ## Additional Resources
 
-Unity Documentation: [Input Manager](https://docs.unity3d.com/Manual/class-InputManager.html)
+DigiOS Interactions Documentation: [DigiOS Interactions Guide](https://developer.digilens.com/hc/en-us/articles/32357557307931-DigiOS-Interactions-Guide)
 
 Voice UI Documentation: [DigiOS VoiceUI Overview](https://developer.digilens.com/hc/en-us/articles/19931447980827-DigiOS-VoiceUI)
-
-## Troubleshooting
-
-If you encounter any issues while running the Unity Sample app, please submit a ticket at: [Submit support ticket](https://developer.digilens.com/hc/en-us/requests/new)
