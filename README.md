@@ -8,7 +8,7 @@ The web page provides a detailed description of the steps required to incorporat
 
 ## Overview
 
-This Unity Sample app demonstrates how to set up your project for AR development with Spaces. Before proceeding, you will need to download the [Snapdragon Spaces Unity SDK](https://spaces.qualcomm.com/developer/ar-sdk/#downloads)
+This Unity Sample app demonstrates how to set up your project for AR development with Spaces. Before proceeding, you will need to download the Snapdragon Spaces Unity SDK. To access the appropriate version of Spaces, contact the [Snapdragon Spaces Support team](https://support.spaces.qualcomm.com/support/tickets/new) and request Spaces SDK v0.24.0.
 
 ## Requirements
 
@@ -24,7 +24,7 @@ This Unity Sample app demonstrates how to set up your project for AR development
 ## Instructions for Building
 1. Download [Unity Hub](https://unity.com/download)
 2. Install editor version [2021.3.33f1](https://unity.com/releases/editor/archive) with Android Build support
-3. Download the [Snapdragon Spaces Unity SDK](https://spaces.qualcomm.com/developer/ar-sdk/#downloads)
+3. Download the Snapdragon Spaces Unity SDK. To access the appropriate version of Spaces, you will need to contact the [Snapdragon Spaces Support team](https://support.spaces.qualcomm.com/support/tickets/new) and request Spaces SDK v0.24.0. 
 4. Open the project and import the Spaces SDK and the Spaces Hand Tracking package (located in the same folder)
 5. Import sample assets for both packages
 6. Within the XR Management Settings, enable Snapdragon Spaces, along with the Base Runtime feature and the Hand Tracking feature
